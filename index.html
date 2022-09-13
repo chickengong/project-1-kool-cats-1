@@ -1,88 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quip-Spot</title>
+  <head>
+    <title>Quip-Spot</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  
+  </head>
 
-  <!-- Fontawesome -->
-  <script src="https://kit.fontawesome.com/762078615f.js" crossorigin="anonymous"></script>
+  <header>
 
-  <!-- CSS stylesheet -->
-  <link rel="stylesheet" href="./style/style.css" >
-
-  <!-- Bulma style -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-
-  <!-- Google font -->
-  <link
-  href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-  rel="stylesheet"/>
-
-</head>
-<body>
-  <header> 
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://www.planetfitness.com/">
+          <img src="./assets/iconfinder_dumbell_gym_healthy life_take exercise_training_weight_workout_4042280.svg" width="48" height="48">
+        </a>
+        <p><strong>Quip-Spot</strong></p>
     
-    <img src="./style/logo.svg" alt="logo">
-
-    <ul>
-      <li><a href="#home"> Home</a></li>
-      <li><a href="#sing-up"> sign Up For Free</a></li>
-    </ul>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" id="burger">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="https://www.planetfitness.com/">
+            Home
+          </a>
+          <a class="navbar-item" href="#https://www.planetfitness.com/">
+            Equipment
+          </a>
+        </div>
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-light">
+                Log in
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
 
   </header>
-  <h1>
-    Qiup Spot
-  </h1>
-  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sed rerum deserunt unde. Eaque, quia! Excepturi numquam odio corrupti harum nisi dolor, dolorum vel necessitatibus nemo labore, ad dolore. Atque.</p>
+
+  <body>
+    <h1 class="title is-3">Quip-Spot</h1>
+    <h2 class="title is-6">Book your equipment now!</h2>
+
+    <button class="button is-black is large">Check Availability</button>
+
+    <div class="Spotify">
+      <a class="spotify-logo" href="https://www.spotify.com/">
+        <img src="./assets/iconfinder_spotify_music_audio_song_sound_social media_8010463.svg" width="48" height="48">
+      </a>
+      <p><em>Listen to free music playlist</em></p>
+    </div>
+
+    <section class="container is-fluid">
+      <p id="Book-Equipment">Book Equipment</p>
+      <div class="field">
+        <label class="label">Name</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="First Last">
+        </div>
+      </div>
+    
+      <div class="field">
+       <label class="label">Username</label>
+        <div class="control has-icons-left">
+          <input class="input" type="text" placeholder="Kool Cats" value="">
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
   
-  <button> Check Availability </button>
-
-  <i class="fa-brands fa-spotify"> Free Spotify Playlist</i>
-  <p>Listen to free music playlist</p>
-
-  <h2> Book Equipment</h2>
-
-  <form action="/action_page.php">
-    <input type="text" id="fname" name="fname" value="Name:"> <br><br>
-    <input type="text" id="lname" name="lname" value="Phone:"><br><br>
-    <input type="text" id="lname" name="lname" value="Email:"><br><br>
-    <input type="text" id="lname" name="lname" value="Equipment Name:"><br><br>
-    <input type="submit" value="Submit">
-  </form>
-
-  <img src="./style/treadmill.png" alt="treadmill">
-
-  <img src="./style/elliptical.png" alt="elliptical">
-
-  <img src="./style/bench-press.png" alt="bench-press">
-
-
-
-  <footer> 
-    <ul>
-      <li><i class=""> 000-000-000 </i></li>
-      <li><i class=""> 3456 South 14th St, Austin TX 78735  </i> </li>
-      <li><i class=""> quipspotadmin@gmail.com </i></li>
-
-    </ul>
-
-    <ul>
-      <li><i class="" > Let's Connect</i> </li>
-      <li><i class="fa-brands fa-square-youtube"></i></li>
-      <li><i class="fa-brands fa-square-facebook"></i></li>
-      <li><i class="fa-brands fa-square-instagram"></i></li>
-      <li><i class="fa fa-twitter-square"></i></li>
-    </ul>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </div>
+      </div>
     
-
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input" type="email" placeholder="kool-cats@kool-cats.com" value="">
+          <span class="icon is-small is-left">
+           <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+           <i class="fas fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      </div>
     
-  </footer>
+      <div class="field">
+        <label class="label">Equipment</label>
+        <div class="control">
+         <div class="select">
+            <select>
+              <option>Treadmill</option>
+              <option>Elliptical</option>
+              <option>Bench Press</option>
+            </select>
+          </div>
+        </div>
+      </div>
 
-  <!-- JQuery  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- JS script -->
-  <script src="./JS/script.js"></script>
-</body>
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            I agree to the <a href="#">terms and conditions</a>
+          </label>
+        </div>
+      </div>
+    
+      <div class="field is-grouped is-grouped-centered">
+        <p class="control">
+          <a class="button is-primary">
+            Submit
+          </a>
+        </p>
+        <p class="control">
+          <a class="button is-light">
+            Cancel
+          </a>
+        </p>
+      </div>
+    </section> 
+
+    <script src="index.js"></script>
+
+  </body>
+
 </html>
