@@ -5,10 +5,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quip-Spot</title>
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/762078615f.js" crossorigin="anonymous"></script>
+
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="./style/style.css" >
+
+  <!-- Bulma style -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <!-- Google font -->
+  <link
+  href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+  rel="stylesheet"/>
+
 </head>
 <body>
   <header> 
-    <i class=""> logo </i>
+    
+    <img src="./style/logo.svg" alt="logo">
 
     <ul>
       <li><a href="#home"> Home</a></li>
@@ -23,25 +39,50 @@
   
   <button> Check Availability </button>
 
-  <i class=""> Free Spotify Playlist  </i>
+  <i class="fa-brands fa-spotify"> Free Spotify Playlist</i>
   <p>Listen to free music playlist</p>
 
-  <h3> Book Equipment</h3>
+  <h2> Book Equipment</h2>
 
   <form action="/action_page.php">
-    <label for="fname">Name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">Phone:</label><br>
-    <input type="text" id="lname" name="lname"><br><br>
-    <label for="lname">Email:</label><br>
-    <input type="text" id="lname" name="lname"><br><br>
-    <label for="lname">Equipment Name:</label><br>
-    <input type="text" id="lname" name="lname"><br><br>
+    <input type="text" id="fname" name="fname" value="Name:"> <br><br>
+    <input type="text" id="lname" name="lname" value="Phone:"><br><br>
+    <input type="text" id="lname" name="lname" value="Email:"><br><br>
+    <input type="text" id="lname" name="lname" value="Equipment Name:"><br><br>
     <input type="submit" value="Submit">
   </form>
-  
+
+  <img src="./style/treadmill.png" alt="treadmill">
+
+  <img src="./style/elliptical.png" alt="elliptical">
+
+  <img src="./style/bench-press.png" alt="bench-press">
 
 
 
+  <footer> 
+    <ul>
+      <li><i class=""> 000-000-000 </i></li>
+      <li><i class=""> 3456 South 14th St, Austin TX 78735  </i> </li>
+      <li><i class=""> quipspotadmin@gmail.com </i></li>
+
+    </ul>
+
+    <ul>
+      <li><i class="" > Let's Connect</i> </li>
+      <li><i class="fa-brands fa-square-youtube"></i></li>
+      <li><i class="fa-brands fa-square-facebook"></i></li>
+      <li><i class="fa-brands fa-square-instagram"></i></li>
+      <li><i class="fa fa-twitter-square"></i></li>
+    </ul>
+    
+
+    
+  </footer>
+
+  <!-- JQuery  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- JS script -->
+  <script src="./JS/script.js"></script>
 </body>
 </html>
