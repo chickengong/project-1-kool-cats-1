@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-  
+    <script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async></script>
   </head>
 
   <header>
@@ -57,14 +57,8 @@
     <h1 class="title is-3">Quip-Spot</h1>
     <h2 class="title is-6">Book your equipment now!</h2>
 
-    <button class="button is-black is large">Check Availability</button>
-
-    <div class="Spotify">
-      <a class="spotify-logo" href="https://www.spotify.com/">
-        <img src="./assets/iconfinder_spotify_music_audio_song_sound_social media_8010463.svg" width="48" height="48">
-      </a>
-      <p><em>Listen to free music playlist</em></p>
-    </div>
+    <div id="embed-iframe"></div>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/6M2wZ9GZgrQXHCFfjv46we?utm_source=generator&theme=0" width="90%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
     <section class="container is-fluid">
       <p id="Book-Equipment">Book Equipment</p>
