@@ -1,0 +1,23 @@
+body {
+    background-color: #CFF087;
+    text-align: center;
+}
+
+#Book-Equipment {
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.input {
+    background-color: #5D6BA8;
+    border-color: #dbdbdb;
+    border-radius: 4px;
+    color: white;
+}
+
+/* Make icon larger 
+/* Center "Quip-Spot" in NavBar 
+/* Think about deleting some lines 
+/* Think about deleting Message box 
+/* Think about deleting Yes or No section 
