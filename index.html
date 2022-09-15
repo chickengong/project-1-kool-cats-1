@@ -29,8 +29,8 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="#"> 
-          <img src="./style/logo.svg" alt="logo" width="112" height="28">
-          <span>Quip-Spot</span>
+          <img  class="logo" src="./style/logo.svg" alt="logo" width="112" height="28">
+          <span class="logo-text">Quip-Spot</span>
         </a>
     
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -46,7 +46,7 @@
             Home
           </a>
     
-          <a class="navbar-item">
+          <a href="./check-avialability.html" class="navbar-item">
             Sign Up For Free
           </a>
         </div>
@@ -62,7 +62,7 @@
           <h2 class="subtitle">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt exercitationem nostrum sit cum. Dolores voluptatibus repellat laborum velit hic, officia facilis nihil illum vero magnam vel. Temporibus mollitia iure blanditiis.
           </h2>
-          <button class="button is-black"> Check Availability</button>
+          <!-- <button class="button is-black"> Check Availability</button> -->
 
         </div>        
       </div>
@@ -84,9 +84,9 @@
          <h1> Book Equipment</h1>
        </div>
        <div class="section">
-        <div class="field">
+        <div class="field  ">
           <div class="control has-icons-left has-icons-right">
-            <input class="input" type="text" placeholder="Name" >
+            <input id="name" class="input" type="text" placeholder="Name" >
             <span class="icon is-small is-left">
               <i class="fas fa-user"></i>
             </span>
@@ -95,7 +95,7 @@
 
         <div class="field">
           <div class="control has-icons-left has-icons-right">
-            <input class="input" type="text" placeholder="Phone" >
+            <input id="phone" class="input" type="text" placeholder="Phone" >
             <span class="icon is-small is-left">
               <i class="fas fa-phone"></i>
             </span>
@@ -104,7 +104,7 @@
 
         <div class="field">
           <div class="control has-icons-left has-icons-right">
-            <input class="input" type="text" placeholder="Email" >
+            <input id="email" class="input" type="text" placeholder="Email" >
             <span class="icon is-small is-left">
               <i class="fas fa-envelope"></i>
             </span>
@@ -113,67 +113,155 @@
 
         <div class="field">
           <div class="control has-icons-left has-icons-right">
-            <input class="input" type="text" placeholder="Equipment Name" >
+            <input id="equipment" class="input" type="text" placeholder="Equipment Name" >
             <span class="icon is-small is-left">
               <i class="fas fa-dumbbell"></i>
             </span>
           </div>
         </div>
-       </div>
 
+        <section class = "section">
+          <div class = "container">
+             <p>
+                <button  id="submit-btn" class = "button is-primary modal-button" data-target="modal">Submit </button>
+             </p>
+             
+             <div id = "modal" class = "modal">
+                <div class = "modal-background"></div>
+
+                <div class = "modal-card">
+                   <header class = "modal-card-head">
+                      <h1 class = "modal-card-title"> Your Booking is Comppletd </h1>
+                      <button class = "delete"  aria-label = "close"></button>
+                   </header>
+                   
+                   <section class = "modal-card-body">
+                      <div class = "content">
+                        <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                          <tbody class="register-info">
+                            <tr> 
+                              <td>Name</td> 
+                              <td id="saved-name"></td>
+                            </tr>
+                            <tr> 
+                              <td>Phone</td> 
+                              <td id="saved-phone"></td>
+                            </tr>
+                            <tr> 
+                              <td>Email:</td> 
+                              <td id="saved-email"></td>
+                            </tr>
+                            <tr> 
+                              <td>Equipment Name</td> 
+                              <td id="saved-equipment"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                   </section>
+                </div>
+             </div>
+          </div>
+       </section>
+
+       </div>
       </div>
     </div>
   </section>
-  <section class="level">
-    <div class=" level-item has-text-centered">
-      <div class="container">
-				<!-- Start Carousel -->
-				<div id="carousel-demo" class="carousel">
-					<div class="item-1">
-						<!-- Slide Content -->
-            <img src="./style/treadmill.png" alt="treadmill">
-					</div>
-					<div class="item-2">
-						<!-- Slide Content -->
-            <img src="./style/elliptical.png" alt="elliptical">
-					</div>
-					<div class="item-3">
-						<!-- Slide Content -->
-            <img src="./style/bench-press.png" alt="bench-press">
-					</div>
 
-          <div class="item-4">
-						<!-- Slide Content -->
-            <img src="./style/bench-press.png" alt="bench-press">
-					</div>
+  <section class="section">
+    <div class="container">
+      <!-- Start Carousel -->
+      <div id="carousel-demo" class="carousel">
+        <div class="item-1">
+          <!-- Slide Content -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="./style/treadmill.png" alt="trademill">
+              </figure>
+              <div class="content has-text-centered">
+                <div class="text-content"> trademill</div> 
+                <button class="button is-black"> Check Availability</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-2">
+          <!-- Slide Content -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="./style/arm-press.png" alt="arm-press">
+              </figure>
+              <div class="content has-text-centered">
+                <div class="text-content"> arm preess</div> 
+                <button class="button is-black"> Check Availability</button>
+              </div>
+            </div>
+          </div>
 
-          <div class="item-5">
-						<!-- Slide Content -->
-            <img src="./style/bench-press.png" alt="bench-press">
-					</div>
-
-          <div class="item-6">
-						<!-- Slide Content -->
-            <img src="./style/bench-press.png" alt="bench-press">
-					</div>
-
-          <div class="item-3">
-						<!-- Slide Content -->
-            <img src="./style/bench-press.png" alt="bench-press">
-					</div>
-				</div>
-				<!-- End Carousel -->
-			</div>
-
-
+        </div>
+        <div class="item-3">
+          <!-- Slide Content -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="./style/bench-press.png" alt="bench-press">
+              </figure>
+              <div class="content has-text-centered">
+                <div class="text-content"> bench-press</div> 
+                <button class="button is-black"> Check Availability</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-4">
+          <!-- Slide Content -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="./style/bike.png" alt="bike">
+              </figure>
+              <div class="content has-text-centered">
+                <div class="text-content"> bike</div> 
+                <button class="button is-black"> Check Availability</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-5">
+          <!-- Slide Content -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="./style/elliptical.png" alt="elliptical">
+              </figure>
+              <div class="content has-text-centered">
+                <div class="text-content"> elliptical</div> 
+                <button class="button is-black"> Check Availability</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-6">
+          <!-- Slide Content -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="./style/leg-press.png" alt="leg-press">
+              </figure>
+              <div class="content has-text-centered">
+                <div class="text-content"> legpress</div> 
+                <button class="button is-black"> Check Availability</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Carousel -->
     </div>
-  </section>
 
-  <!-- <img src="./style/treadmill.png" alt="treadmill">
-
-  <img src="./style/elliptical.png" alt="elliptical">
-
-  <img src="./style/bench-press.png" alt="bench-press"> -->
 
 
 
@@ -214,11 +302,11 @@
           <p> Let connect</p>
 
           <span>
-            <a href="https://www.youtube.com/" tittle="youtube"> <i class="fa-brands fa-square-youtube"></i></a>
+            <a href="https://www.youtube.com/account" title="youtube"> <i class="fa-brands fa-square-youtube"></i></a>
           </span>
 
           <span class="icon">
-            <a href="https://www.facebook.com/" title="facebook"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.facebook.com/login/" title="facebook"><i class="fa-brands fa-square-facebook"></i></a>
             
           </span>
 
@@ -245,8 +333,8 @@
   <!-- JQuery  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- JS script -->
-  <script src="./JS/navbar.js"></script>
-  <script src="./JS/script.js"></script>
+  <!-- <script src="./style/JS/navbar.js"></script> -->
+  <script src="./style/JS/script.js"></script>
   
 </body>
 </html>
