@@ -9,80 +9,244 @@
   <!-- Fontawesome -->
   <script src="https://kit.fontawesome.com/762078615f.js" crossorigin="anonymous"></script>
 
-  <!-- CSS stylesheet -->
-  <link rel="stylesheet" href="./style/style.css" >
-
   <!-- Bulma style -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <!-- Carousel bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
 
   <!-- Google font -->
   <link
   href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
   rel="stylesheet"/>
 
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="./style/style.css" >
+
 </head>
 <body>
   <header> 
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#"> 
+          <img src="./style/logo.svg" alt="logo" width="112" height="28">
+          <span>Quip-Spot</span>
+        </a>
     
-    <img src="./style/logo.svg" alt="logo">
-
-    <ul>
-      <li><a href="#home"> Home</a></li>
-      <li><a href="#sing-up"> sign Up For Free</a></li>
-    </ul>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item">
+            Home
+          </a>
+    
+          <a class="navbar-item">
+            Sign Up For Free
+          </a>
+        </div>
+      </div>
+    </nav>
 
   </header>
-  <h1>
-    Qiup Spot
-  </h1>
-  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sed rerum deserunt unde. Eaque, quia! Excepturi numquam odio corrupti harum nisi dolor, dolorum vel necessitatibus nemo labore, ad dolore. Atque.</p>
+  <section class="section">
+    <div class="container"> 
+      <div class="colum is-center">
+        <div class="colum is-half">
+          <h1 class="title">Quip-Spot</h1>
+          <h2 class="subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt exercitationem nostrum sit cum. Dolores voluptatibus repellat laborum velit hic, officia facilis nihil illum vero magnam vel. Temporibus mollitia iure blanditiis.
+          </h2>
+          <button class="button is-black"> Check Availability</button>
+
+        </div>        
+      </div>
+    </div>
+  </section>
+
+  <section class="level">
+    <div class=" level-item has-text-centered">
+      <div class="row">
+        <div>
+          <span class="icon">
+            <i class="fa-brands fa-spotify"> </i>
+          </span>
+          <span>Free Spotify Playlist</span>
+          <p>Listen to free music playlist</p>
+       </div>
   
-  <button> Check Availability </button>
+       <div class="content">
+         <h1> Book Equipment</h1>
+       </div>
+       <div class="section">
+        <div class="field">
+          <div class="control has-icons-left has-icons-right">
+            <input class="input" type="text" placeholder="Name" >
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+          </div>
+        </div>
 
-  <i class="fa-brands fa-spotify"> Free Spotify Playlist</i>
-  <p>Listen to free music playlist</p>
+        <div class="field">
+          <div class="control has-icons-left has-icons-right">
+            <input class="input" type="text" placeholder="Phone" >
+            <span class="icon is-small is-left">
+              <i class="fas fa-phone"></i>
+            </span>
+          </div>
+        </div>
 
-  <h2> Book Equipment</h2>
+        <div class="field">
+          <div class="control has-icons-left has-icons-right">
+            <input class="input" type="text" placeholder="Email" >
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </div>
+        </div>
 
-  <form action="/action_page.php">
-    <input type="text" id="fname" name="fname" value="Name:"> <br><br>
-    <input type="text" id="lname" name="lname" value="Phone:"><br><br>
-    <input type="text" id="lname" name="lname" value="Email:"><br><br>
-    <input type="text" id="lname" name="lname" value="Equipment Name:"><br><br>
-    <input type="submit" value="Submit">
-  </form>
+        <div class="field">
+          <div class="control has-icons-left has-icons-right">
+            <input class="input" type="text" placeholder="Equipment Name" >
+            <span class="icon is-small is-left">
+              <i class="fas fa-dumbbell"></i>
+            </span>
+          </div>
+        </div>
+       </div>
 
-  <img src="./style/treadmill.png" alt="treadmill">
+      </div>
+    </div>
+  </section>
+  <section class="level">
+    <div class=" level-item has-text-centered">
+      <div class="container">
+				<!-- Start Carousel -->
+				<div id="carousel-demo" class="carousel">
+					<div class="item-1">
+						<!-- Slide Content -->
+            <img src="./style/treadmill.png" alt="treadmill">
+					</div>
+					<div class="item-2">
+						<!-- Slide Content -->
+            <img src="./style/elliptical.png" alt="elliptical">
+					</div>
+					<div class="item-3">
+						<!-- Slide Content -->
+            <img src="./style/bench-press.png" alt="bench-press">
+					</div>
+
+          <div class="item-4">
+						<!-- Slide Content -->
+            <img src="./style/bench-press.png" alt="bench-press">
+					</div>
+
+          <div class="item-5">
+						<!-- Slide Content -->
+            <img src="./style/bench-press.png" alt="bench-press">
+					</div>
+
+          <div class="item-6">
+						<!-- Slide Content -->
+            <img src="./style/bench-press.png" alt="bench-press">
+					</div>
+
+          <div class="item-3">
+						<!-- Slide Content -->
+            <img src="./style/bench-press.png" alt="bench-press">
+					</div>
+				</div>
+				<!-- End Carousel -->
+			</div>
+
+
+    </div>
+  </section>
+
+  <!-- <img src="./style/treadmill.png" alt="treadmill">
 
   <img src="./style/elliptical.png" alt="elliptical">
 
-  <img src="./style/bench-press.png" alt="bench-press">
+  <img src="./style/bench-press.png" alt="bench-press"> -->
 
 
 
   <footer> 
-    <ul>
-      <li><i class=""> 000-000-000 </i></li>
-      <li><i class=""> 3456 South 14th St, Austin TX 78735  </i> </li>
-      <li><i class=""> quipspotadmin@gmail.com </i></li>
+    <!-- Main container -->
+    <nav class="level">
+      <!-- Left side -->
+      <div class="level-left">
+        <div class="level-item">
+          <div class="column"> 
+            <div class="icon-text">
+              <span class="icon has-text-info">
+                <i class="fa-solid fa-phone"></i>
+              </span>
+              <span>000-000-000</span>
+            </div>
+          
+            <div class="icon-text">
+              <span class="icon has-text-info">
+                <i class="fa-sharp fa-solid fa-location-dot"> </i>
+              </span>
+              <span>3456 South 14th St, Austin TX 78735</span>
+            </div>
 
-    </ul>
+            <div class="icon-text">
+              <span class="icon has-text-info">
+                <i class="fa-solid fa-square-envelope"></i>
+              </span>
+              <span>quipspotadmin@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <ul>
-      <li><i class="" > Let's Connect</i> </li>
-      <li><i class="fa-brands fa-square-youtube"></i></li>
-      <li><i class="fa-brands fa-square-facebook"></i></li>
-      <li><i class="fa-brands fa-square-instagram"></i></li>
-      <li><i class="fa fa-twitter-square"></i></li>
-    </ul>
+      <!-- Right side -->
+      <div class="level-right">
+        <div class="">
+          <p> Let connect</p>
+
+          <span>
+            <a href="https://www.youtube.com/" tittle="youtube"> <i class="fa-brands fa-square-youtube"></i></a>
+          </span>
+
+          <span class="icon">
+            <a href="https://www.facebook.com/" title="facebook"><i class="fa-brands fa-square-facebook"></i></a>
+            
+          </span>
+
+          <span class="icon">
+            <a href="https://www.instagram.com/" title="instargram"><i class="fa-brands fa-square-instagram"> </i> </a>
+          </span>
+
+          <span class="icon">
+            <a href="https://twitter.com/i/flow/login" title="twitter"><i class="fa fa-twitter-square"> </i> </a>
+            
+          </span>
+        </div>
+      </div>
+    </nav>
     
+        
+        
 
-    
+        
   </footer>
+  <!-- Carousel -->
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
 
   <!-- JQuery  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- JS script -->
+  <script src="./JS/navbar.js"></script>
   <script src="./JS/script.js"></script>
+  
 </body>
 </html>

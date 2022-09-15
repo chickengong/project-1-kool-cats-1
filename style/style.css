@@ -1,0 +1,28 @@
+footer ul li {
+  list-style-type: none;
+}
+
+body {
+  background-color: #CFF087;
+}
+
+.carousel {
+  padding: 3rem 1.5rem;
+  overflow: hidden;
+}
+
+.input {
+  background-color: #5D6BA8;
+  border-color: #dbdbdb;
+  border-radius: 4px;
+  color: white;
+}
+
+.input::placeholder { 
+  color: white;
+  opacity: 0.75; 
+}
+
+footer {
+  background-color: gray;
+}
