@@ -50,13 +50,14 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-end">
-            <a class="navbar-item"> Home </a>
+            <a href="./index.html" class="navbar-item"> Home </a>
 
-            <a class="navbar-item"> Sign Up For Free </a>
+            <a href="./check-avialability.html" class="navbar-item"> Sign Up For Free </a>
           </div>
         </div>
       </nav>
     </header>
+
 
     <section class="section">
       <nav class="level">
@@ -65,51 +66,68 @@
         </h1>
       </nav>
 
-      <section class="section">
-        <div class="field">
-        <div class="field-group">
-          <div class="field is-inline-block">
-            <label class="label">First Name</label>
-            <div class="control">
-              <input id="first-name" class="input" type="text" />
+      <div class="columns">
+        <div class="column is-half is-offset-one-quarter">
+          <div class="columns">
+              <div class="column">
+                <div class="control">
+                  <label class="label">First Name:</label>
+                  <input id="first-name" class="input" type="text" />
+                </div>
+                
+              </div>
+              <div class="column">
+                <div class="control">
+                  <label class="label">Last Name:</label>
+                  <input id="last-name" class="input" type="text" />
+                </div>
+              </div>
+            </div>
+        
+          <div class="columns">
+            <div class="column">
+              <div class="control">
+                <label class="label"> Email: </label>
+                <input id="email" class="input" type="text" />
+              </div>
+            </div>
+          </div>
+            
+          <div class="columns">
+            <div class="column ">
+              <div class="control">
+                <label class="label">Phone Number:</label>
+                <input id="phone" class="input" type="text" />
+              </div>
+              
+            </div>
+            <div class="column">
+              <div class="control">
+                <label class="label">Zip Code:</label>
+                <input id="zip-code" class="input" type="text" />
+              </div>
             </div>
           </div>
 
-          <div class="field is-inline-block">
-            <label class="label">Last Name</label>
-            <div class="control">
-              <input id="last-name" class="input" type="text" />
-            </div>
-          </div>
-
-          <div class="field is-inline">
-            <label class="label"> Email: </label>
-            <input id="email" class="input" type="text" />
-          </div>
-
-          <div class="field is-inline-block">
-            <label class="label">Phone Number</label>
-            <div class="control">
-              <input id="phone" class="input" type="text" />
-            </div>
-          </div>
-
-          <div class="field is-inline-block">
-            <label class="label">Zip Code</label>
-            <div class="control">
-              <input id="zip-code" class="input" type="text" />
-            </div>
-          </div>
         </div>
+      </div>
 
+    
+    <div class="level">
+      <div class="level-item has-text-centered">
         <button id="submit" class="button is-dark">Submit</button>
 
-        <h3 class="response"> </h3> 
-      </section>
+        <h3 class="response"> </h3>
 
+      </div>
+        
+
+    </div>
       
 
     
+
+
     </section>
 
     <footer>
