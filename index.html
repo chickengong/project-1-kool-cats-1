@@ -1,145 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quip-Spot</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-    <script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async></script>
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/762078615f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bulma style -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+
+    <!-- Carousel bulma -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css"
+    />
+
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
-
-  <header>
-
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="https://www.planetfitness.com/">
-          <figure class="image is-256x256">
-            <img src="./assets/iconfinder_dumbell_gym_healthy life_take exercise_training_weight_workout_4042280.svg">
-          </figure>
-        </a>
-        
-    
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" id="burger">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-    
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="https://www.planetfitness.com/">
-            Home
+  <body>
+    <header>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <img
+              class="logo"
+              src="./style/logo.svg"
+              alt="logo"
+              width="112"
+              height="28"
+            />
+            <span class="logo-text">Quip-Spot</span>
           </a>
-          <a class="navbar-item" href="#https://www.planetfitness.com/">
-            Equipment
+
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
           </a>
         </div>
-    
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-primary">
-                <strong>Sign up</strong>
-              </a>
-              <a class="button is-light">
-                Log in
-              </a>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-end">
+            <a href="./index.html" class="navbar-item"> Home </a>
+
+            <a href="./check-avialability.html" class="navbar-item">
+              Sign Up For Free
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="section">
+      <div class="container">
+        <div class="colum is-center">
+          <div class="colum is-half">
+            <h1 class="title has-text-centered">Quip-Spot</h1>
+            <h2 class="subtitle">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              exercitationem nostrum sit cum. Dolores voluptatibus repellat
+              laborum velit hic, officia facilis nihil illum vero magnam vel.
+              Temporibus mollitia iure blanditiis.
+            </h2>
+            <!-- <button class="button is-black"> Check Availability</button> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="level">
+      <div class="level-item has-text-centered">
+        <div class="row">
+          <div>
+            <span class="icon">
+              <i class="fa-brands fa-spotify"> </i>
+            </span>
+            <span>Free Spotify Playlist</span>
+            <p>Listen to free music playlist</p>
+          </div>
+
+          <div class="content">
+            <h1>Book Equipment</h1>
+          </div>
+          <div class="section">
+            <div class="field">
+              <div class="control has-icons-left has-icons-right">
+                <input id="name" class="input" type="text" placeholder="Name" />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control has-icons-left has-icons-right">
+                <input
+                  id="phone"
+                  class="input"
+                  type="text"
+                  placeholder="Phone"
+                />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-phone"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control has-icons-left has-icons-right">
+                <input
+                  id="email"
+                  class="input"
+                  type="text"
+                  placeholder="Email"
+                />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control has-icons-left has-icons-right">
+                <input
+                  id="equipment"
+                  class="input"
+                  type="text"
+                  placeholder="Equipment Name"
+                />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-dumbbell"></i>
+                </span>
+              </div>
+            </div>
+
+            <section class="section">
+              <div class="container">
+                <p>
+                  <button
+                    id="submit-btn"
+                    class="button is-primary modal-button"
+                    data-target="modal"
+                  >
+                    Submit
+                  </button>
+                </p>
+
+                <div id="modal" class="modal">
+                  <div class="modal-background"></div>
+
+                  <div class="modal-card">
+                    <header class="modal-card-head">
+                      <h1 class="modal-card-title">
+                        Your Booking is Comppletd
+                      </h1>
+                      <button class="delete" aria-label="close"></button>
+                    </header>
+
+                    <section class="modal-card-body">
+                      <div class="content">
+                        <table
+                          class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth"
+                        >
+                          <tbody class="register-info">
+                            <tr>
+                              <td>Name</td>
+                              <td id="saved-name"></td>
+                            </tr>
+                            <tr>
+                              <td>Phone</td>
+                              <td id="saved-phone"></td>
+                            </tr>
+                            <tr>
+                              <td>Email:</td>
+                              <td id="saved-email"></td>
+                            </tr>
+                            <tr>
+                              <td>Equipment Name</td>
+                              <td id="saved-equipment"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Start Carousel -->
+        <div id="carousel-demo" class="carousel">
+          <div class="item-1">
+            <!-- Slide Content -->
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="./style/treadmill.png" alt="trademill" />
+                </figure>
+                <div class="content has-text-centered">
+                  <div class="text-content">trademill</div>
+                  <a href="./book-equipment.html"
+                    ><button class="button is-black">Check Availability</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item-2">
+            <!-- Slide Content -->
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="./style/arm-press.png" alt="arm-press" />
+                </figure>
+                <div class="content has-text-centered">
+                  <div class="text-content">arm preess</div>
+                  <a href="./book-equipment.html"
+                    ><button class="button is-black">Check Availability</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item-3">
+            <!-- Slide Content -->
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="./style/bench-press.png" alt="bench-press" />
+                </figure>
+                <div class="content has-text-centered">
+                  <div class="text-content">bench-press</div>
+                  <a href="./book-equipment.html">
+                    <button class="button is-black">
+                      Check Availability
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item-4">
+            <!-- Slide Content -->
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="./style/bike.png" alt="bike" />
+                </figure>
+                <div class="content has-text-centered">
+                  <div class="text-content">bike</div>
+                  <a href="./book-equipment.html"
+                    ><button class="button is-black">Check Availability</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item-5">
+            <!-- Slide Content -->
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="./style/elliptical.png" alt="elliptical" />
+                </figure>
+                <div class="content has-text-centered">
+                  <div class="text-content">elliptical</div>
+                  <a href="./book-equipment.html"
+                    ><button class="button is-black">Check Availability</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item-6">
+            <!-- Slide Content -->
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="./style/leg-press.png" alt="leg-press" />
+                </figure>
+                <div class="content has-text-centered">
+                  <div class="text-content">legpress</div>
+                  <a href="./book-equipment.html">
+                    <button class="button is-black">
+                      Check Availability
+                    </button></a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <!-- End Carousel -->
       </div>
-    </nav>
+    </section>
 
-  </header>
+    <footer>
+      <!-- Main container -->
+      <nav class="level">
+        <!-- Left side -->
+        <div class="level-left">
+          <div class="level-item">
+            <div class="column">
+              <div class="icon-text">
+                <span class="icon has-text-info">
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <span>000-000-000</span>
+              </div>
 
-  <body>
-    <h1 class="title is-3">Quip-Spot</h1>
-    <h2 class="title is-6">Book your equipment now!</h2>
+              <div class="icon-text">
+                <span class="icon has-text-info">
+                  <i class="fa-sharp fa-solid fa-location-dot"> </i>
+                </span>
+                <span>3456 South 14th St, Austin TX 78735</span>
+              </div>
 
-    <div id="embed-iframe is-level-center"></div>
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0JeyP8r2hBxYIoxXv11XiX?utm_source=generator&theme=0" width="65%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-    <section class="container is-fluid">
-      <p id="Book-Equipment">Book Equipment</p>
-      <div class="field">
-        <label class="label">Name</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="First Last">
-        </div>
-      </div>
-    
-      <div class="field">
-        </p>
-       <label class="label">Username</label>
-        <div class="control has-icons-left">
-          <input class="input" type="text" placeholder="Kool Cats" value="">
-          <span class="icon is-small is-left">
-            <i class="fas fa-user"></i>
-          </span>
-  
-          <span class="icon is-small is-right">
-            <i class="fas fa-check"></i>
-          </span>
-        </div>
-      </div>
-    
-      <div class="field">
-        <label class="label">Email</label>
-        <div class="control has-icons-left has-icons-right">
-          <input class="input" type="email" placeholder="kool-cats@kool-cats.com" value="">
-          <span class="icon is-small is-left">
-           <i class="fas fa-envelope"></i>
-          </span>
-          <span class="icon is-small is-right">
-           <i class="fas fa-exclamation-triangle"></i>
-          </span>
-        </div>
-      </div>
-    
-      <div class="field">
-        <label class="label">Equipment</label>
-        <div class="control">
-         <div class="select">
-            <select>
-              <option>Treadmill</option>
-              <option>Elliptical</option>
-              <option>Bench Press</option>
-            </select>
+              <div class="icon-text">
+                <span class="icon has-text-info">
+                  <i class="fa-solid fa-square-envelope"></i>
+                </span>
+                <span>quipspotadmin@gmail.com</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="field">
-        <div class="control">
-          <label class="checkbox">
-            <input type="checkbox">
-            I agree to the <a href="#">terms and conditions</a>
-          </label>
+        <!-- Right side -->
+        <div class="level-right">
+          <div class="">
+            <p>Let connect</p>
+
+            <span>
+              <a href="https://www.youtube.com/account" title="youtube">
+                <i class="fa-brands fa-square-youtube"></i
+              ></a>
+            </span>
+
+            <span class="icon">
+              <a href="https://www.facebook.com/login/" title="facebook"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+            </span>
+
+            <span class="icon">
+              <a href="https://www.instagram.com/" title="instargram"
+                ><i class="fa-brands fa-square-instagram"> </i>
+              </a>
+            </span>
+
+            <span class="icon">
+              <a href="https://twitter.com/i/flow/login" title="twitter"
+                ><i class="fa fa-twitter-square"> </i>
+              </a>
+            </span>
+          </div>
         </div>
-      </div>
-    
-      <div class="field is-grouped is-grouped-centered">
-        <p class="control">
-          <a class="button is-primary">
-            Submit
-          </a>
-        </p>
-        <p class="control">
-          <a class="button is-light">
-            Cancel
-          </a>
-        </p>
-      </div>
-    </section> 
-    <footer class="footer">
-
+      </nav>
     </footer>
+    <!-- Carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
 
-    <script src="index.js"></script>
-
+    <!-- JQuery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- JS script -->
+    <!-- <script src="./style/JS/navbar.js"></script> -->
+    <script src="./style/JS/script.js"></script>
   </body>
-
 </html>
