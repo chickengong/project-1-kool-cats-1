@@ -7,7 +7,7 @@ footer ul li {
 }
 
 body {
-  background-color: #CFF087;
+  background-color: #cff087;
 }
 
 .carousel {
@@ -16,20 +16,19 @@ body {
 }
 
 .input {
-  background-color: #5D6BA8;
+  background-color: #5d6ba8;
   border-color: #dbdbdb;
   border-radius: 4px;
   color: white;
 }
 
-.input::placeholder { 
+.input::placeholder {
   color: white;
-  opacity: 0.75; 
+  opacity: 0.75;
 }
 
 footer {
   background-color: #e6e6e6;
-  
 }
 
 .card {
@@ -39,7 +38,6 @@ footer {
 }
 
 .logo {
-
 }
 
 .slider-navigation-next {
@@ -47,15 +45,15 @@ footer {
 }
 
 .slider-navigation-previous {
-  background-color: #5d6ba8; 
+  background-color: #5d6ba8;
 }
 
 .slider-navigation-next svg {
-  color: white; 
+  color: white;
 }
 
 .slider-navigation-previous svg {
-  color: white; 
+  color: white;
 }
 
 .button {
@@ -77,7 +75,12 @@ footer {
   background-color: #6a74a3;
 }
 
-.table td:not([align]), table th:not([align]) {
+.table td:not([align]),
+table th:not([align]) {
   text-align: left;
 }
 
+.title:not(:last-child) {
+  margin-bottom: 4.5rem;
+  font-size: 81px;
+}
