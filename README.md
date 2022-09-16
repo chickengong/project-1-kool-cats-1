@@ -45,10 +45,8 @@ Improvement Opportunities:
 
 ## Usage
 
-```md
 ![Quip-Spot Home Page](assets/images/Quip-spot_home.png)
 ![Quip-Spot Icons](assets/images/Quip-Spot_homev2.png)
-```
 
 ## Credits
 
