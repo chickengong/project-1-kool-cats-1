@@ -99,9 +99,9 @@ document.addEventListener("DOMContentLoaded", () => {
 // spotfify API
 
 window.onSpotifyIframeApiReady = (IFrameAPI) => {
-  let element = document.getElementById("embed-iframe");
+  let element = document.getElementById('embed-iframe');
   let options = {
-    uri: "spotify:artist:6M2wZ9GZgrQXHCFfjv46we",
+    uri: 'spotify:show:1DUZrbF7kHU0TME6tbo43t',
   };
   let callback = (EmbedController) => {};
   IFrameAPI.createController(element, options, callback);
