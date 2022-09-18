@@ -95,3 +95,47 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// spotfify API
+
+window.onSpotifyIframeApiReady = (IFrameAPI) => {
+  let element = document.getElementById('embed-iframe');
+  let options = {
+    uri: 'spotify:show:1DUZrbF7kHU0TME6tbo43t',
+  };
+  let callback = (EmbedController) => {};
+  IFrameAPI.createController(element, options, callback);
+};
+
+var api_token = ""
+
+$.ajax({
+  async: true,
+  crossDomain: true,
+  url: "https://sagenda.net/api/v3/token",
+  method: "POST",
+  headers: {
+    "content-type": "application/x-www-form-urlencoded",
+  },
+  data: {
+    grant_type: "api_token",
+    api_token: "a075eba83d7c4f47ab0fffa234dc9505",
+  },
+})
+  .then(function (response) {
+    console.log(response);
+    return (api_token = response.access_token);
+  })
+  .then(function (response) {
+    $.ajax({
+      async: true,
+      crossDomain: true,
+      url: "https://sagenda.net/api/v3/bookableItems",
+      method: "GET",
+      headers: {
+        Authorization: "Bearer " + response,
+      },
+    }).done(function (response) {
+      console.log(response);
+    });
+  });
