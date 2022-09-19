@@ -82,7 +82,7 @@ table th:not([align]) {
 
 .title:not(:last-child) {
   margin-bottom: 4.5rem;
-  font-size: 81px;
+  font-size: 66px;
   font-family: "Paytone One", sans-serif;
 }
 
