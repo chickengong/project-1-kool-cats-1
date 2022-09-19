@@ -108,6 +108,7 @@ window.onSpotifyIframeApiReady = (IFrameAPI) => {
 };
 
 var api_token = ""
+var access_token = ""
 
 $.ajax({
   async: true,
@@ -139,3 +140,56 @@ $.ajax({
       console.log(response);
     });
   });
+
+  $.ajax({
+    async: true,
+    crossDomain: true,
+    url: 'https://sagenda.net/api/v3/token',
+    method: 'POST',
+    headers: {
+      'content-type': 'application/x-www-form-urlencoded',
+    },
+    data: {
+      grant_type: 'api_token',
+      api_token: 'a075eba83d7c4f47ab0fffa234dc9505',
+    },
+  })
+    .then(function (response) {
+      console.log(response);
+      return (api_token = response.access_token);
+    })
+    .then(function (response) {
+      $.ajax({
+        async: true,
+        crossDomain: true,
+        url: 'https://sagenda.net/api/v3/events/2022-10-01/2022-10-01/6323c116701dd404ccfaa1dd',
+        method: 'GET',
+        headers: {
+          Authorization: 'Bearer ' + response,
+        },
+      }).done(function (response) {
+        console.log(response);
+      });
+    }); 
+
+    // //{
+    //   "eventIdentifier"; "NjMyNjc5ZTExNzkyNmY0ODQ0Y2MzMTM0OzEwLzEvMjAyMiAxMDowMCBBTTs2MzIzYzExNjcwMWRkNDA0Y2NmYWExZGQ",
+    //   "userIdentifier"; "[user-identifier]",
+    //   "participants"; 1 
+    // }
+    
+    // $.ajax({
+    //   "async": true,
+    //   "crossDomain": true,
+    //   "url": "https://sagenda.net/api/v3/eventLocks",
+    //   "method": "POST ",
+    //   "headers": {
+    //     "content-type": "application/json",
+    //     "authorization": "Bearer " + api_token,
+    //   },
+    //   "processData": false,
+    //   "data": "{\"eventIdentifier\":\"NjMyNjc5ZTExNzkyNmY0ODQ0Y2MzMTM0OzEwLzEvMjAyMiAxMDowMCBBTTs2MzIzYzExNjcwMWRkNDA0Y2NmYWExZGQ\",\"participants\": 1}"
+    // }).done(function (response) {
+    //   console.log(response);
+    // });
+ 
