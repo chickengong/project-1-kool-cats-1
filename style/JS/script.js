@@ -189,17 +189,17 @@ $.ajax({
   
       btn1.addEventListener('click', function () {
         console.log('clicked');
-        btn1.classList.add('is-danger');
+        btn1.classList.add('is-success');
       });
 
       btn2.addEventListener('click', function () {
         console.log('clicked');
-        btn2.classList.add('is-danger');
+        btn2.classList.add('is-success');
       });
 
       btn3.addEventListener('click', function () {
         console.log('clicked');
-        btn3.classList.add('is-danger');
+        btn3.classList.add('is-success');
       });
 
       btn4.addEventListener('click', function () {
