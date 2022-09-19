@@ -182,6 +182,32 @@ $.ajax({
       });
     }); 
 
+      var bnt1 = document.getElementById("btn1");
+      var bnt2 = document.getElementById("btn2");
+      var bnt3 = document.getElementById("btn3");
+      var bnt4 = document.getElementById("btn4");
+  
+      btn1.addEventListener('click', function () {
+        console.log('clicked');
+        btn1.classList.add('is-success');
+      });
+
+      btn2.addEventListener('click', function () {
+        console.log('clicked');
+        btn2.classList.add('is-success');
+      });
+
+      btn3.addEventListener('click', function () {
+        console.log('clicked');
+        btn3.classList.add('is-success');
+      });
+
+      btn4.addEventListener('click', function () {
+        console.log('clicked');
+        btn4.classList.add('is-danger');
+      });
+  
+
     // //{
     //   "eventIdentifier"; "NjMyNjc5ZTExNzkyNmY0ODQ0Y2MzMTM0OzEwLzEvMjAyMiAxMDowMCBBTTs2MzIzYzExNjcwMWRkNDA0Y2NmYWExZGQ",
     //   "userIdentifier"; "[user-identifier]",
